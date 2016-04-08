@@ -1,0 +1,147 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+body {
+    line-height: normal;
+}
+
+a, button {
+	outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; 
+}
+
+h1 {
+    font-size: 5.9vmin !important;
+}
+
+h2 {
+    font-size: 3.0vh !important;
+    color: #ffffcc !important;
+}
+
+p {
+    font-size: 2vmin !important;
+    color: #ffffcc !important;
+}
+
+.container-fluid {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100vw;
+    max-width: 1000px;
+    height: 100vh;
+    background: #fff;
+    background: linear-gradient(to top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)) fixed;
+
+}
+
+.header {
+    height: 10vh;
+    line-height: 10vh;
+    background: linear-gradient(to top, rgba(204, 204, 51, 1), rgba(51, 153, 204, 1)) fixed;
+}
+
+.header > h1 {
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    height: calc(100vh - 20vh);
+    text-align: center;
+    background: linear-gradient(to top, rgba(204, 204, 51, 1), rgba(255, 102, 51, .9)) fixed;
+}
+
+.content {
+    height: calc(100vh - 20vh);
+    overflow: auto;
+    background: linear-gradient(to top, rgba(204, 204, 204, 1), rgba(204, 204, 51, .9)) fixed;
+}
+
+.content .content_inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1vh;
+}
+
+.content .content_inner .img_content {
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 1.5%;
+    width: 90%;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background: #ffffcc;
+}
+
+.content .content_inner .img_content .size-full {
+    margin: 0;
+    overflow: hidden;
+}
+
+.content .content_inner .img_content .size-full #size-full {
+    width: 100%;
+    height: 30vh;
+    background: transparent url("../images/healty_cover2.jpg") no-repeat scroll 50% 50%;
+    background-size: cover;
+    animation: 20s scale infinite linear;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0,0.0,0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0,0.0,0);
+    }
+}
+
+.footer {
+    height: 10vh;
+    line-height: 10vh;
+    background: linear-gradient(to top, rgba(51, 153, 204, 1), rgba(51, 153, 204, .9)) fixed;
+}
+
+.footer > h1 {
+    color: white;
+    text-align: center;
+}
