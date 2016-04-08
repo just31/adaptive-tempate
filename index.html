@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Адаптивный дизайн</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <!--Bootstrap3-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Подключаем скрипт для поддержки старыми IE6,7,8 элементов html5-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main>
+    <div class="container-fluid">
+        <section id="header">
+            <div class="row">
+                <div class="col-xs-12 header">
+                    <h1>Заголовок сайта</h1>
+                </div>
+            </div>
+        </section>
+        <section id="content">
+            <div class="row">
+                <div class="col-xs-3 menu" role="navigation">
+                    <h2>Меню</h2>
+                </div>
+                <div class="content" role="main">
+                    <div class="content_inner">
+                        <h2>Основное содержание сайта</h2>
+                        <p>
+                            После внесения всех этих изменений, если Вы внесли все верно, то на сайте ничего не должно измениться, а если попробовать уменьшить окна браузера дизайн и картинки должны сжиматься.
+                        </p>
+                        <div class="img_content">
+                            <div class="size-full">
+                                <div id="size-full" title="Адаптивный дизайн"></div>
+                            </div>
+                        </div>
+                        <div class="img_content">
+                            <img src="images/extinguisher-cover12.jpg" alt="Адаптивный дизайн" title="Адаптивный дизайн">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="row">
+                <div class="col-xs-12 footer">
+                    <h1>Подвал сайта</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script>
+		(function($){
+			$(window).load(function(){
+
+				$(".content").mCustomScrollbar({
+					theme:"rounded-dots",
+                    setTop:"5px"
+				});
+
+			});
+		})(jQuery);
+	</script>
+  </body>
+</html>
